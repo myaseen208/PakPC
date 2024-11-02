@@ -1,0 +1,37 @@
+Package: PakPC
+Type: Package
+Title: Shiny App to Analyze Pakistan's Population Census Data
+Version: 0.2.0
+Authors@R: c(
+              person("Muhammad", "Yaseen", email = "myaseen208@gmail.com",   role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-5923-1714"))
+            , person("Muhammad", "Arfan Dilber",  email = "pbsfsd041@gmail.com", role = "ctb")
+            , person("Zahid", "Asghar",  email = "g.zahid@gmail.com", role = "ctb")
+            )
+Maintainer: Muhammad Yaseen <myaseen208@gmail.com>
+Description: Provides tools to analyze Pakistan's Population Census data.
+URL: https://myaseen208.com/PakPC/
+     https://myaseen208.shinyapps.io/PakPC/
+     https://CRAN.R-project.org/package=PakPC
+BugReports: https://github.com/myaseen208/PakPC/issues
+Depends: R (>= 4.1)
+Imports: 
+  collapse,
+  DT,
+  magrittr,
+  PakPC2017,
+  PakPC2023,
+  rpivotTable,
+  shiny,
+  shinyBS,
+  shinydashboard
+Suggests: 
+    shinytest2,
+    testthat (>= 3.0.0)
+License: GPL-3
+LazyData: TRUE
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+Config/testthat/edition: 3
+Note:
+    1. School of Mathematical & Statistical Sciences, Clemson University, Clemson, South Carolina, USA
+    2. Department of Mathematics and Statistics, University of Agriculture Faisalabad, Pakistan
