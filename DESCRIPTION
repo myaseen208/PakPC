@@ -1,7 +1,7 @@
 Package: PakPC
 Type: Package
 Title: 'shiny' App to Analyze Pakistan's Population Census Data
-Version: 0.4.0
+Version: 0.3.0
 Authors@R: c(
               person("Muhammad", "Yaseen", email = "myaseen208@gmail.com",   role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-5923-1714"))
             , person("Muhammad", "Arfan Dilber",  email = "pbsfsd041@gmail.com", role = "ctb")

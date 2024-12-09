@@ -1,7 +1,7 @@
 
 ## `PakPC`: Shiny App to Analyze Pakistan’s Population Census Data
 
-###### Version : [0.4.0](https://myaseen208.com/PakPC/); Copyright (C) 2024: License: [GPL-2\|GPL-3](https://www.r-project.org/Licenses/)
+###### Version : [0.3.0](https://myaseen208.com/PakPC/); Copyright (C) 2024: License: [GPL-2\|GPL-3](https://www.r-project.org/Licenses/)
 
 ##### *Muhammad Yaseen<sup>1,2</sup>, Muhammad Arfan Dilber<sup>3</sup>, and Zahid Asghar<sup>4</sup>*
 
@@ -25,7 +25,7 @@ v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org
 downloads](https://cranlogs.r-pkg.org/badges/grand-total/PakPC?color=green)](https://CRAN.R-project.org/package=PakPC)
 <!-- [![packageversion](https://img.shields.io/badge/Package%20version-0.2.3.3-orange.svg)](https://github.com/myaseen208/PakPC) -->
 
-[![develVersion](https://img.shields.io/badge/devel%20version-0.2.0-orange.svg)](https://github.com/myaseen208/PakPC)
+[![develVersion](https://img.shields.io/badge/devel%20version-0.4.0-orange.svg)](https://github.com/myaseen208/PakPC)
 
 <!-- [![GitHub Download Count](https://github-basic-badges.herokuapp.com/downloads/myaseen208/PakPC/total.svg)] -->
 
