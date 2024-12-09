@@ -1,8 +1,9 @@
 source("ui.R")
+
 server <- function(input, output, session) {
     
     output$OutPakPC2023Pak <- 
-      renderDT({
+      DT::renderDT({
           DT::datatable(
             data    = PakPC2023Pak,
             caption = htmltools::tags$caption(
@@ -26,7 +27,7 @@ server <- function(input, output, session) {
         })
     
     output$OutPakPC2023PakDiv <- 
-      renderDT({
+      DT::renderDT({
         DT::datatable(
             data  = PakPC2023PakDiv
           , caption = htmltools::tags$caption(
@@ -49,7 +50,7 @@ server <- function(input, output, session) {
       })
     
     output$OutPakPC2023PakDist <- 
-      renderDT({
+      DT::renderDT({
         DT::datatable(
           data  = PakPC2023PakDist
           , caption = htmltools::tags$caption(
@@ -88,7 +89,7 @@ server <- function(input, output, session) {
     })
     
     output$Out2023Basic <- 
-      renderDT({
+      DT::renderDT({
         DT::datatable(
           data  = Data2023Basic()
         , filter = c("none", "bottom", "top")[3]
@@ -126,7 +127,7 @@ server <- function(input, output, session) {
     })
     
     output$Out2023Edu <- 
-      renderDT({
+      DT::renderDT({
         DT::datatable(
           data  = Data2023Edu()
         , filter = c("none", "bottom", "top")[3]
@@ -157,7 +158,7 @@ server <- function(input, output, session) {
     })
   
     output$Out2023Dis <- 
-      renderDT({
+      DT::renderDT({
         DT::datatable(
           data  = Data2023Dis()
         , filter = c("none", "bottom", "top")[3]
@@ -191,7 +192,7 @@ server <- function(input, output, session) {
     })
    
     output$Out2023HC <- 
-      renderDT({
+      DT::renderDT({
         DT::datatable(
           data  = Data2023HC()
         , filter = c("none", "bottom", "top")[3]
@@ -221,7 +222,7 @@ server <- function(input, output, session) {
     
      
     output$Out2023Listing <- 
-      renderDT({
+      DT::renderDT({
         DT::datatable(
           data  = Data2023Listing()
         , filter = c("none", "bottom", "top")[3]
@@ -253,7 +254,7 @@ server <- function(input, output, session) {
     })
     
     output$Out2023Misc <- 
-      renderDT({
+      DT::renderDT({
         DT::datatable(
           data  = Data2023Misc()
         , filter = c("none", "bottom", "top")[3]
@@ -295,7 +296,7 @@ server <- function(input, output, session) {
     
     
     output$Out2017 <- 
-      renderDT({
+      DT::renderDT({
         DT::datatable(
           data  = Data2017()
         , filter = c("none", "bottom", "top")[3]

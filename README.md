@@ -1,7 +1,7 @@
 
 ## `PakPC`: Shiny App to Analyze Pakistan’s Population Census Data
 
-###### Version : [0.2.0](https://myaseen208.com/PakPC/); Copyright (C) 2024: License: [GPL-2\|GPL-3](https://www.r-project.org/Licenses/)
+###### Version : [0.4.0](https://myaseen208.com/PakPC/); Copyright (C) 2024: License: [GPL-2\|GPL-3](https://www.r-project.org/Licenses/)
 
 ##### *Muhammad Yaseen<sup>1,2</sup>, Muhammad Arfan Dilber<sup>3</sup>, and Zahid Asghar<sup>4</sup>*
 
@@ -25,17 +25,27 @@ v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org
 downloads](https://cranlogs.r-pkg.org/badges/grand-total/PakPC?color=green)](https://CRAN.R-project.org/package=PakPC)
 <!-- [![packageversion](https://img.shields.io/badge/Package%20version-0.2.3.3-orange.svg)](https://github.com/myaseen208/PakPC) -->
 
+[![develVersion](https://img.shields.io/badge/devel%20version-0.2.0-orange.svg)](https://github.com/myaseen208/PakPC)
+
 <!-- [![GitHub Download Count](https://github-basic-badges.herokuapp.com/downloads/myaseen208/PakPC/total.svg)] -->
 
 [![Project Status:
 WIP](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive)
 [![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2024--11--02-yellowgreen.svg)](https://github.com/myaseen208/PakPC)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2024--12--09-yellowgreen.svg)](https://github.com/myaseen208/PakPC)
 \*\*\*
 
 ## Description
 
-Provides tools to analyze Pakistan’s Population Census data.
+Provides tools for analyzing Pakistan’s Population Censuses data via the
+‘PakPC2023’ and ‘PakPC2017’ R packages. Designed for researchers,
+policymakers, and professionals, the app enables in-depth numerical and
+graphical analysis, including detailed cross-tabulations and insights.
+With diverse statistical models and visualization options, it supports
+informed decision-making in social and economic policy. This tool
+enhances users’ ability to explore and interpret census data, providing
+valuable insights for effective planning and analysis across various
+fields.
 
 ## Installation
 

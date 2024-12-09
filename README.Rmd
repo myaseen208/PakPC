@@ -31,7 +31,7 @@ knitr::opts_chunk$set(
 [![rstudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/PakPC?color=green)](https://CRAN.R-project.org/package=PakPC)
 <!-- [![packageversion](https://img.shields.io/badge/Package%20version-0.2.3.3-orange.svg)](https://github.com/myaseen208/PakPC) -->
 
-```{r, results = 'asis', echo = FALSE, eval = FALSE}
+```{r, results = 'asis', echo = FALSE, eval = TRUE}
 dver <- ifelse(test = gsub("(.\\.)(\\d+)(\\..)", "", getNamespaceVersion("PakPC")) != "",
                yes = getNamespaceVersion("PakPC"),
                no = gsub("Version:\\s*", "", readLines(paste0("https://raw.githubusercontent.com/", "myaseen208/PakPC", "/master/DESCRIPTION"))[grep("Version:", readLines(paste0("https://raw.githubusercontent.com/", "myaseen208/PakPC", "/master/DESCRIPTION")))]))

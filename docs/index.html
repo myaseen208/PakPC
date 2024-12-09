@@ -8,8 +8,8 @@
 <title>PakPC • PakPC</title>
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
-<script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.4.2/css/all.min.css" rel="stylesheet">
-<link href="deps/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet">
+<script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
+<link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="PakPC">
 <meta name="description" content="Shiny App to Analyze Pakistan's Population Census Data">
 <meta property="og:description" content="Shiny App to Analyze Pakistan's Population Census Data">
@@ -29,7 +29,7 @@
 
     <a class="navbar-brand me-2" href="index.html">PakPC</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.2.0</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.4.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,8 +58,8 @@
 <code>PakPC</code>: Shiny App to Analyze Pakistan’s Population Census Data<a class="anchor" aria-label="anchor" href="#pakpc-shiny-app-to-analyze-pakistans-population-census-data"></a>
 </h2>
 <div class="section level6">
-<h6 id="version--020-copyright-c-2024-license-gpl-2gpl-3">Version : <a href="https://myaseen208.com/PakPC/">0.2.0</a>; Copyright (C) 2024: License: <a href="https://www.r-project.org/Licenses/" class="external-link">GPL-2|GPL-3</a>
-<a class="anchor" aria-label="anchor" href="#version--020-copyright-c-2024-license-gpl-2gpl-3"></a>
+<h6 id="version--040-copyright-c-2024-license-gpl-2gpl-3">Version : <a href="https://myaseen208.com/PakPC/">0.4.0</a>; Copyright (C) 2024: License: <a href="https://www.r-project.org/Licenses/" class="external-link">GPL-2|GPL-3</a>
+<a class="anchor" aria-label="anchor" href="#version--040-copyright-c-2024-license-gpl-2gpl-3"></a>
 </h6>
 </div>
 <div class="section level5">
@@ -74,14 +74,15 @@
 </ol>
 <hr>
 <p><a href="https://cran.r-project.org/" class="external-link"><img src="https://img.shields.io/badge/R%3E%3D-3.5.0-6666ff.svg" alt="minimal R version"></a> <a href="https://www.gnu.org/licenses/gpl-3.0" class="external-link"><img src="https://img.shields.io/badge/License-GPL%20v3-blue.svg" alt="License: GPL v3"></a> <a href="https://cran.r-project.org/package=PakPC" class="external-link"><img src="https://www.r-pkg.org/badges/version-last-release/PakPC" alt="CRAN_Status_Badge"></a> <a href="https://CRAN.R-project.org/package=PakPC" class="external-link"><img src="https://cranlogs.r-pkg.org/badges/grand-total/PakPC?color=green" alt="rstudio mirror downloads"></a> <!-- [![packageversion](https://img.shields.io/badge/Package%20version-0.2.3.3-orange.svg)](https://github.com/myaseen208/PakPC) --></p>
+<p><a href="https://github.com/myaseen208/PakPC" class="external-link"><img src="https://img.shields.io/badge/devel%20version-0.2.0-orange.svg" alt="develVersion"></a></p>
 <!-- [![GitHub Download Count](https://github-basic-badges.herokuapp.com/downloads/myaseen208/PakPC/total.svg)] -->
-<p><a href="https://www.repostatus.org/#inactive" class="external-link"><img src="https://www.repostatus.org/badges/latest/inactive.svg" alt="Project Status: WIP"></a> <a href="https://lifecycle.r-lib.org/articles/stages.html#stable" class="external-link"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="lifecycle"></a> <a href="https://github.com/myaseen208/PakPC" class="external-link"><img src="https://img.shields.io/badge/last%20change-2024--11--02-yellowgreen.svg" alt="Last-changedate"></a> ***</p>
+<p><a href="https://www.repostatus.org/#inactive" class="external-link"><img src="https://www.repostatus.org/badges/latest/inactive.svg" alt="Project Status: WIP"></a> <a href="https://lifecycle.r-lib.org/articles/stages.html#stable" class="external-link"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="lifecycle"></a> <a href="https://github.com/myaseen208/PakPC" class="external-link"><img src="https://img.shields.io/badge/last%20change-2024--12--09-yellowgreen.svg" alt="Last-changedate"></a> ***</p>
 </div>
 </div>
 <div class="section level2">
 <h2 id="description">Description<a class="anchor" aria-label="anchor" href="#description"></a>
 </h2>
-<p>Provides tools to analyze Pakistan’s Population Census data.</p>
+<p>Provides tools for analyzing Pakistan’s Population Censuses data via the ‘PakPC2023’ and ‘PakPC2017’ R packages. Designed for researchers, policymakers, and professionals, the app enables in-depth numerical and graphical analysis, including detailed cross-tabulations and insights. With diverse statistical models and visualization options, it supports informed decision-making in social and economic policy. This tool enhances users’ ability to explore and interpret census data, providing valuable insights for effective planning and analysis across various fields.</p>
 </div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
@@ -133,6 +134,7 @@
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
+<li><a href="https://cloud.r-project.org/package=PakPC" class="external-link">View on CRAN</a></li>
 <li><a href="https://github.com/myaseen208/PakPC/" class="external-link">Browse source code</a></li>
 <li><a href="https://github.com/myaseen208/PakPC/issues" class="external-link">Report a bug</a></li>
 </ul>

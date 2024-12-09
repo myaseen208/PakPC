@@ -6,6 +6,9 @@
 \usage{
 PakPC()
 }
+\value{
+Pivot tables and graphs of PakPC2017 and PakPC2023 R packages data
+}
 \description{
 Shiny App to Analyze Pakistan's Population Census Data
 }
@@ -14,5 +17,5 @@ if(interactive()) {
     library(PakPC)
     PakPC()
   }
-  
+
 }

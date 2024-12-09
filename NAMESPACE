@@ -3,7 +3,6 @@
 export(PakPC)
 import(PakPC2017)
 import(PakPC2023)
-import(collapse)
 import(htmltools)
 import(magrittr)
 import(rpivotTable)

@@ -1,19 +1,21 @@
-library(collapse)
 library(DT)
 library(magrittr)
 library(PakPC2017)
 library(PakPC2023)
 library(rpivotTable)
 library(shiny)
-library(shinyBS) 
 library(shinydashboard)
+library(shinydashboardPlus)
 
 ui <- 
-  dashboardPage(
-    dashboardHeader(title = "Pakistan Population Census"),
+  shinydashboardPlus::dashboardPage(
+    shinydashboardPlus::dashboardHeader(
+      title = tagList(span(class = "logo-lg", "Pakistan Population Census", style = "color: maroon; font-size: inherit;"), icon("leaf")),
+      userOutput("user")
+    ),
     
     # Sidebar for dataset selection and navigation between multiple pages
-    dashboardSidebar(
+    shinydashboardPlus::dashboardSidebar(
       sidebarMenu(
         menuItem("Home", tabName = "Home", icon = icon("home"), badgeLabel = "Home", badgeColor = "green"),
         menuItem("Introduction", tabName = "Intro", icon = icon("computer"), badgeLabel = "Info", badgeColor = "green"),
@@ -30,7 +32,7 @@ ui <-
       )
       , disable   = c(TRUE, FALSE)[2]
       , width     = NULL
-      , collapsed = c(TRUE, FALSE)[1]
+      , collapsed = c(TRUE, FALSE)[2]
     ),
     
     dashboardBody(
@@ -103,14 +105,75 @@ ui <-
         # Home Page
         tabItem(
           tabName = "Home",
-          h2("Pakistan Population Census"),
-          h4("About the Census Data"),
-          
-          p("This dashboard allows you to explore datasets from the 
-             Pakistan Population Census of 2017 and 2023. 
-             Choose a dataset from the sidebar to generate tables and 
-            graphs.")
-        ),
+          h1(tags$span("Pakistan Population Census Analysis", style = "color: green; font-size: inherit;"), align = "center"),
+          br()
+          , h4(
+                "The", tags$span("Pakistan Population Census Analysis App", style = "color: green; font-size: inherit;"), 
+                "offers a comprehensive platform for exploring and analyzing data from Pakistan's Population Censuses using the",
+                tags$a(href = "https://cran.r-project.org/web/packages/PakPC2023/index.html", "PakPC2023", target = "_blank"),
+                "and",
+                tags$a(href = "https://cran.r-project.org/web/packages/PakPC2017/index.html", "PakPC2017", target = "_blank"),
+                "R packages."
+              ,  align = "justify"
+            )
+          , br()
+          , h3(
+            tags$span("Key Features", style = "color: green; font-size: inherit;")
+            )
+          , tags$ul(
+                style = "text-align: justify;"
+              , tags$li(tags$span("Data Exploration:", style = "color: green; font-size: inherit;"), "Enables detailed cross-tabulations and insights into census data.")
+              , tags$li(tags$span("Numerical and Graphical Analysis:", style = "color: green; font-size: inherit;"), "Offers advanced tools for visualizing trends and distributions.")
+              , tags$li(tags$span("Statistical Modeling:", style = "color: green; font-size: inherit;"), "Supports diverse models for data interpretation and predictive analysis.")
+              , tags$li(tags$span("User-Friendly Interface:", style = "color: green; font-size: inherit;"), "Designed for researchers, policymakers, and professionals to make data-driven decisions with ease.")
+              )
+        , br()
+        , h3(
+            tags$span("Applications", style = "color: green; font-size: inherit;")
+            )
+          , tags$ul(
+                style = "text-align: justify;"
+              , tags$li(tags$span("Social Policy:", style = "color: green; font-size: inherit;"), "Analyze population trends for education, health, and social services planning.")
+              , tags$li(tags$span("Economic Policy:", style = "color: green; font-size: inherit;"), "Gain insights for economic development and resource allocation.")
+              , tags$li(tags$span("Research and Academia:", style = "color: green; font-size: inherit;"), "Enhance scholarly work with robust census data analysis tools.")
+              )
+        , br()
+        , h4(
+             tags$span("This app empowers users to extract meaningful insights from census data, 
+                 driving effective planning and analysis across various domains.", style = "color: green; font-size: inherit;")
+              ,  align = "justify"
+            )
+        , br()
+        , h4(
+              tags$strong("Author/Maintainer:"),
+              tags$a(href = "https://myaseen208.com/", "Muhammad Yaseen", target = "_blank"),
+              align = "center"
+            )
+         , h4(
+              tags$strong("Contributor(s):"),
+              tags$a(href = "mailto:pbsfsd041@gmail.com", "Muhammad Arfan Dilber;", target = "_blank"),
+              tags$a(href = "mailto:g.zahid@gmail.com", "Zahid Asghar", target = "_blank"),
+              align = "center"
+            )
+         , h4(
+              tags$strong("Email:"),
+              tags$a(href = "mailto:myaseen208@gmail.com", "myaseen208@gmail.com", target = "_blank"),
+              align = "center"
+            )
+        , h4(
+              tags$strong("Website:"),
+              tags$a(href = "https://myaseen208.com/PakPC", "https://myaseen208.com/PakPC",  target = "_blank"),
+              align = "center"
+            )
+           , br()
+            , h5(
+                  tags$strong("If you find this app to be useful, please let us know at ")
+                , tags$a(href = "mailto:myaseen208@gmail.com", tags$strong("myaseen208@gmail.com."))
+                , tags$strong("We can use this information to obtain more resources to make the app better. Thank you for your interest in our app!")
+                , align = "justify"
+                )
+              
+            ),
         
         # Introduction Page
         tabItem(
